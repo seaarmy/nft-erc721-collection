@@ -14,21 +14,21 @@ module.exports = {
           from_bg: colors.slate[100],
           to_bg: colors.slate[200],
         },
-        titles: colors.indigo[600],
+        titles: colors.white,
         links: {
-          txt: colors.indigo[600],
+          txt: colors.white,
           hover_txt: colors.indigo[700],
         },
         loading_spinner: colors.indigo[500],
         popups: {
-          bg: colors.white,
-          txt: colors.slate[800],
+          bg: colors.slate[900],
+          txt: colors.white,
           internal_border: colors.slate[200],
         },
         warning: {
           txt: colors.slate[800],
-          bg: colors.yellow[400],
-          border: colors.yellow[500],
+          bg: colors.slate[400],
+          border: colors.slate[500],
         },
         error: {
           txt: colors.red[500],
@@ -38,7 +38,7 @@ module.exports = {
 
         // Inputs
         btn: {
-          txt: colors.slate[800],
+          txt: colors.slate[900],
           bg: colors.white,
           border: colors.slate[200],
           hover_txt: colors.slate[800],
@@ -47,10 +47,10 @@ module.exports = {
         },
         btn_primary: {
           txt: colors.white,
-          bg: colors.indigo[500],
+          bg: colors.slate[900],
           border: colors.indigo[500],
-          hover_txt: colors.white,
-          hover_bg: colors.indigo[600],
+          hover_txt: colors.slate[900],
+          hover_bg: colors.white,
           hover_border: colors.indigo[600],
         },
         btn_error: {
@@ -61,10 +61,10 @@ module.exports = {
           hover_bg: colors.red[600],
           hover_border: colors.red[600],
         },
-        label: colors.indigo[600],
+        label: colors.white ,
         txt_input: {
-          txt: colors.indigo[600],
-          bg: colors.white,
+          txt: colors.white,
+          bg: colors.slate[900],
           border: colors.slate[200],
           focus_txt: colors.indigo[600],
           focus_bg: colors.slate[50],
@@ -73,12 +73,12 @@ module.exports = {
         
         // Whitelist proof widget
         wl_message: {
-          txt: colors.slate[800],
+          txt: colors.white,
           bg: colors.indigo[100],
         },
 
         // Mint widget
-        token_preview: colors.indigo[200],
+        token_preview: colors.slate[900],
       },
     },
   },

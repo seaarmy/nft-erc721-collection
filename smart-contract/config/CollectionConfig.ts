@@ -9,25 +9,25 @@ const CollectionConfig: CollectionConfigInterface = {
   // The contract name can be updated using the following command:
   // yarn rename-contract NEW_CONTRACT_NAME
   // Please DO NOT change it manually!
-  contractName: 'YourNftToken',
-  tokenName: 'My NFT Token',
-  tokenSymbol: 'MNT',
-  hiddenMetadataUri: 'ipfs://__CID__/hidden.json',
-  maxSupply: 10000,
+  contractName: 'SeaHorseArmy',
+  tokenName: 'SeaHorse',
+  tokenSymbol: 'SEAHORSE',
+  hiddenMetadataUri: 'ipfs://QmZ4htRyavjM269kqsHb5Usu3BbUnR8B4xYtwXiRq4vF2w/hidden.json',
+  maxSupply: 91,
   whitelistSale: {
-    price: 0.05,
-    maxMintAmountPerTx: 1,
+    price: 0.07,
+    maxMintAmountPerTx: 7,
   },
   preSale: {
-    price: 0.07,
-    maxMintAmountPerTx: 2,
+    price: 0.11,
+    maxMintAmountPerTx: 7,
   },
   publicSale: {
-    price: 0.09,
-    maxMintAmountPerTx: 5,
+    price: 0.14,
+    maxMintAmountPerTx: 7,
   },
-  contractAddress: null,
-  marketplaceIdentifier: 'my-nft-token',
+  contractAddress: '0x592f91CbAa15941ab6213da6e3d710C37a446325',
+  marketplaceIdentifier: 'seahorsearmy',
   marketplaceConfig: Marketplaces.openSea,
   whitelistAddresses,
 };
