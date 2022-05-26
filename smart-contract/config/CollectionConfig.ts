@@ -10,8 +10,8 @@ const CollectionConfig: CollectionConfigInterface = {
   // yarn rename-contract NEW_CONTRACT_NAME
   // Please DO NOT change it manually!
   contractName: 'SeaHorseArmy',
-  tokenName: 'SeaHorse',
-  tokenSymbol: 'SEAHORSE',
+  tokenName: 'SeaHorseArmy',
+  tokenSymbol: 'SHA',
   hiddenMetadataUri: 'ipfs://QmZ4htRyavjM269kqsHb5Usu3BbUnR8B4xYtwXiRq4vF2w/hidden.json',
   maxSupply: 91,
   whitelistSale: {
