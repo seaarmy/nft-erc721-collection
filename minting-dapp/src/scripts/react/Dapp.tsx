@@ -137,7 +137,7 @@ export default class Dapp extends React.Component<Props, State> {
       merkleProofManualAddressFeedbackMessage: 
       <>
         <strong>Congratulations!</strong> <span className="emoji">🎉</span><br />
-        Your Merkle Proof <strong>has been copied to the clipboard</strong>. You can paste it into <a href={this.generateContractUrl()} target="_blank">{this.state.networkConfig.blockExplorer.name}</a> to claim your tokens.
+        Your Merkle Proof <strong>has been copied to the clipboard</strong>. You are entitled to mint up to 7 SeaHorses but make sure it is one Transaction!
       </>,
     });
   }
@@ -208,7 +208,7 @@ export default class Dapp extends React.Component<Props, State> {
               Hey, looking for a <strong>super-safe experience</strong>? <span className="emoji">😃</span><br />
               You can interact with the smart-contract <strong>directly</strong> through <a href={this.generateContractUrl()} target="_blank">{this.state.networkConfig.blockExplorer.name}</a>, without even connecting your wallet to this DAPP! <span className="emoji">🚀</span><br />
               <br />
-              Keep safe! <span className="emoji">❤️</span>
+              Stay safe! <span className="emoji">❤️</span>
             </div>
 
             {!this.isWalletConnected() || this.state.isWhitelistMintEnabled ?
