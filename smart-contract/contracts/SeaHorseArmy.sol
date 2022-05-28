@@ -1,5 +1,23 @@
 // SPDX-License-Identifier: MIT
 
+// .oOOOo.               o      O                             Oo                          
+// o     o               O      o                            o  O                         
+// O.                    o      O                           O    o                        
+//  `OOoo.               OoOooOOo                          oOooOoOo                       
+//       `O .oOo. .oOoO' o      O .oOo. `OoOo. .oOo  .oOo. o      O `OoOo. `oOOoOO. O   o 
+//        o OooO' O   o  O      o O   o  o     `Ooo. OooO' O      o  o      O  o  o o   O 
+// O.    .O O     o   O  o      o o   O  O         O O     o      O  O      o  O  O O   o 
+//  `oooO'  `OoO' `OoO'o o      O `OoO'  o     `OoO' `OoO' O.     O  o      O  o  o `OoOO 
+//                                                                                      o 
+//                                                                                   OoO' 
+// OooOoO OooOoO OooOoO OooOoO 
+//      o      o      o      o 
+//      O      O      O      O 
+//     O      O      O      O  
+//    O      O      O      O   
+//   o      o      o      o    
+//  O      O      O      O   
+
 pragma solidity >=0.8.9 <0.9.0;
 
 import 'erc721a/contracts/ERC721A.sol';
@@ -7,7 +25,7 @@ import '@openzeppelin/contracts/access/Ownable.sol';
 import '@openzeppelin/contracts/utils/cryptography/MerkleProof.sol';
 import '@openzeppelin/contracts/security/ReentrancyGuard.sol';
 
-contract YourNftToken is ERC721A, Ownable, ReentrancyGuard {
+contract SeaHorseArmy is ERC721A, Ownable, ReentrancyGuard {
 
   using Strings for uint256;
 
@@ -154,15 +172,6 @@ contract YourNftToken is ERC721A, Ownable, ReentrancyGuard {
   }
 
   function withdraw() public onlyOwner nonReentrant {
-    // This will pay HashLips Lab Team 5% of the initial sale.
-    // By leaving the following lines as they are you will contribute to the
-    // development of tools like this and many others.
-    // =============================================================================
-    (bool hs, ) = payable(0x146FB9c3b2C13BA88c6945A759EbFa95127486F4).call{value: address(this).balance * 5 / 100}('');
-    require(hs);
-    // =============================================================================
-
-    // This will transfer the remaining contract balance to the owner.
     // Do not remove this otherwise you will not be able to withdraw the funds.
     // =============================================================================
     (bool os, ) = payable(owner()).call{value: address(this).balance}('');
