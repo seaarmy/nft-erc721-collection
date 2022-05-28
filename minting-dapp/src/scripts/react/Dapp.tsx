@@ -137,7 +137,7 @@ export default class Dapp extends React.Component<Props, State> {
       merkleProofManualAddressFeedbackMessage: 
       <>
         <strong>Congratulations!</strong> <span className="emoji">🎉</span><br />
-        Your Merkle Proof <strong>has been copied to the clipboard</strong>. You are entitled to mint up to 7 SeaHorses but make sure it is one Transaction!
+        Your Merkle Proof <strong>has been copied to the clipboard</strong>. You are entitled to mint up to 7 SeaHorses but make sure it is one Transaction! Go to <a href={this.generateContractUrl()} target="_blank">{this.state.networkConfig.blockExplorer.name}</a> and follow the instructions!
       </>,
     });
   }

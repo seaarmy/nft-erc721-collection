@@ -305,13 +305,13 @@ label {
     .preview {
       @apply p-8;
 
-      @apply bg-cyan-900/50;
+      @apply bg-neutral-900/10;
       
       img {
         @apply m-auto;
-        @apply max-h-52;
+        @apply max-h-72;
         
-        filter: saturate(0);
+        filter: saturate(1);
       }
     }
 
