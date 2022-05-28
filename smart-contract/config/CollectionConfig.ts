@@ -26,7 +26,7 @@ const CollectionConfig: CollectionConfigInterface = {
     price: 0.14,
     maxMintAmountPerTx: 7,
   },
-  contractAddress: '0x44b98FC68745e64D63FB3099e421D57e926Dd7d2',
+  contractAddress: '0x85cDF041DD2A8f838E98Bc8b0fb6888518B98064',
   marketplaceIdentifier: 'seahorsearmy',
   marketplaceConfig: Marketplaces.openSea,
   whitelistAddresses,
