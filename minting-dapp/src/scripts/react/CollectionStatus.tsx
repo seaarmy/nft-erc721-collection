@@ -38,7 +38,7 @@ export default class CollectionStatus extends React.Component<Props, State> {
           
           <div className="supply">
             <span className="label">Supply</span>
-            {this.props.totalSupply}/{this.props.maxSupply}
+            {this.props.totalSupply}/777
           </div>
 
           <div className="current-sale">
